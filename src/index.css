@@ -1,6 +1,6 @@
 body{
   width: 100vw;
-  font-family: 'Unbounded';
+  font-family: 'Unbounded', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
   background-color: white;
