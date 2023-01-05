@@ -21,7 +21,7 @@ export default function Contact(){
                 </div>
                 <div className="linkedin">
                     <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin}></FontAwesomeIcon>
-                    <a href="http://link">Connect</a>
+                    <a href="https://www.linkedin.com/in/mohit-verma-894020236/">Connect</a>
                 </div>
             </div>
             <div className="contact-bottom">
@@ -29,9 +29,9 @@ export default function Contact(){
                     Copyright <FontAwesomeIcon className="copyright" icon={faCopyright}></FontAwesomeIcon> 2022, Mohit
                 </div>
                 <div className="contact-socials">
-                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareInstagram}></FontAwesomeIcon></a>
-                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareFacebook}></FontAwesomeIcon></a>
-                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareGithub}></FontAwesomeIcon></a>
+                    <a href="https://www.instagram.com/ig_strgglr/?next=%2Fig_strgglr%2F" className="social-item"><FontAwesomeIcon icon={faSquareInstagram}></FontAwesomeIcon></a>
+                    <a href="https://www.facebook.com/evil.sparkie/" className="social-item"><FontAwesomeIcon icon={faSquareFacebook}></FontAwesomeIcon></a>
+                    <a href="https://github.com/strgglr" className="social-item"><FontAwesomeIcon icon={faSquareGithub}></FontAwesomeIcon></a>
                     <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareTwitter}></FontAwesomeIcon></a>
                 </div>
             </div>
