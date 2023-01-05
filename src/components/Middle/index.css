@@ -1,0 +1,99 @@
+.middle-container{
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+    background-image: url(../assets/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding: max(9vw,9vh);
+    align-items: center;
+}
+.middle-intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.intro-1{
+    color: rgba(206, 206, 206, 0.644);
+    font-size: max(1vw,1.5vh);
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    word-spacing: 0.4rem;
+}
+.intro-2{
+    color: rgba(255, 255, 255, 0.671);
+    font-size: max(2vw,2.5vh);
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.3rem;
+}
+.intro-2-gold{
+    color: rgb(231, 183, 60);
+}
+.middle-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.img-profile{
+    position: absolute;
+    /* transition: all 0.5s ease-in-out; */
+    width: max(16vw,18vh);
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+    border: max(0.8vw,0.8vh) solid rgb(231, 183, 60);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-shadow: 
+    -0.2vw -0.2vw 0.4vw white,
+    0.2vw 0.2vw 0.4vw rgb(255, 255, 255);
+}
+.middle-desc{
+    font-size: 1vw;
+    font-weight: lighter;
+    width: max(16vw,18vh);
+    height: max(16vw,18vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border: max(0.8vw,0.8vh) solid rgb(231, 183, 60);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    box-shadow: 
+    -0.2vw -0.2vw 0.4vw white,
+    0.2vw 0.2vw 0.4vw rgb(255, 255, 255);
+    position: absolute;
+    transform: rotateY(540deg);
+    backface-visibility: hidden;
+}
+.middle-profile:hover{
+    transform: rotateY(540deg);
+}
+.button-about{
+    display: flex;
+    font-size: max(0.75vw,0.75vh);
+    font-weight: lighter;
+    border-radius: 5px;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+    width: max(9vw,9vh);
+    margin-top: 1vw;
+    background-color: rgb(20, 20, 20);
+    padding: 0.9vw 1vw 0.9vw 1vw;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.76);
+}

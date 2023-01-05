@@ -1,25 +1,8 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
+body{
+  width: 100vw;
+  font-family: 'Unbounded';
+  box-sizing: border-box;
   margin: 0;
-  font: 300 11px/1.4  sans-serif;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
-  overflow: hidden;
-  display: block;
-}
-
-.dashboard {
-  margin-top: 200px;
-  margin-left: 200px;
-}
-
-@media screen and (max-width: 1200px) {
-  body {
-    overflow: visible;
-  }
+  background-color: white;
+  letter-spacing: 1.2px;
 }

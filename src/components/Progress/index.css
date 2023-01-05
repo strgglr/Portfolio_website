@@ -1,0 +1,15 @@
+.outer{
+    width: 100%;
+    background-color: black;
+    padding: 0px;
+    height: min(2vw,3vh);
+    margin: max(1.2vw,1.2vh);
+}
+.progress-container{
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    text-indent: 10px;
+    height: min(2vw,3vh);
+    background-color: goldenrod;
+}

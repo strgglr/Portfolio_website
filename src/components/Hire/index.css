@@ -1,0 +1,54 @@
+.hire-container{
+    box-sizing: border-box;
+    background-image: url(../assets/bg7.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    margin-top: 10vh;
+    border-radius: 4px;
+    padding-left: min(2vw,3vh);
+    padding-right: min(2vw,3vh);
+    width: 30vw;
+    border: 1px solid rgba(253, 253, 253, 0.897);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+input{
+    font-size: min(1.5vw,2vh);
+    width: 100%;
+    margin-top: 1vh;
+    height: 10%;
+    margin-bottom: 3vh;
+}
+.submit{
+    cursor: pointer;
+    font-family: 'Unbounded';
+    margin-top: 2vh;
+    color: white;
+    display: flex;
+    border: 1px solid rgb(72, 235, 72);
+    background-color: rgba(54, 218, 68, 0.185);
+    justify-content: center;
+    border-radius: 4px;
+    width: 25%;
+}
+.msg{
+    margin-bottom: 1vh;
+}
+.btn{
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: 550;
+    border-radius: 4px;
+    padding: min(0.8vw,1.5vh);
+    display: flex;
+    justify-content: center;
+}

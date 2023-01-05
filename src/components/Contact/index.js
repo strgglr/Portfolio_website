@@ -1,103 +1,40 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import { faLinkedin, faSquareFacebook, faSquareGithub, faSquareInstagram, faSquareTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faHome} from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import './index.css';
 
-const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
-
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm('service_ggkhuup', 'template_rly5o9q', form.current, 'vcmod4YECA5SUiPYh')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
-
-  return (
-    <>
-      <div className="container contact-page">
-        
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-            I am interested in internship and full time oppurtunities - especially on ambitious
-            or innovative projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
-          </p>
-          <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
-          </div>
+export default function Contact(){
+    return(
+        <div className="contact-container">
+            <div className="contact-top">
+                <div className="contact-info">
+                    <h1>
+                        CONTACT ME
+                    </h1>
+                    <ul className="info-list">
+                        <li className="info-item"><FontAwesomeIcon className="info-icon" icon={faHome}></FontAwesomeIcon>F-5, Ravindra Bhawan, IIT Roorkee</li>
+                        <li className="info-item"><FontAwesomeIcon className="info-icon" icon={faWhatsapp}></FontAwesomeIcon>+91-7015978234</li>
+                        <li className="info-item"><FontAwesomeIcon className="info-icon" icon={faEnvelope}></FontAwesomeIcon>evilu100@gmail.com</li>
+                    </ul>
+                </div>
+                <div className="linkedin">
+                    <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin}></FontAwesomeIcon>
+                    <a href="http://link">Connect</a>
+                </div>
+            </div>
+            <div className="contact-bottom">
+                <div className="bottom-copyright">
+                    Copyright <FontAwesomeIcon className="copyright" icon={faCopyright}></FontAwesomeIcon> 2022, Mohit
+                </div>
+                <div className="contact-socials">
+                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareInstagram}></FontAwesomeIcon></a>
+                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareFacebook}></FontAwesomeIcon></a>
+                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareGithub}></FontAwesomeIcon></a>
+                    <a href="http://link" className="social-item"><FontAwesomeIcon icon={faSquareTwitter}></FontAwesomeIcon></a>
+                </div>
+            </div>
         </div>
-        <div className="info-map">
-          My address <br />
-          Mohit,
-          <br />
-          Hisar,
-          Haryana, 
-          India
-          <br />
-          <span>evilu100@gmail.com</span>
-        </div>
-      </div>
-      <Loader type="pacman" />
-    </>
-  )
+    )
 }
-
-export default Contact

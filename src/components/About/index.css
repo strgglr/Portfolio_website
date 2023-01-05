@@ -1,0 +1,30 @@
+.about-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw;
+}
+.about-desc-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+.about-desc{
+    font-weight: max(1.2vw,1.2vh);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.about-skills{
+    height: 20rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2vw;
+}

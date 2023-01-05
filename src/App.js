@@ -1,24 +1,33 @@
-import { Route, Routes} from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Layout from './components/Layout'
-import './App.scss'
+import React from 'react'
+import Hire from "./components/Hire";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './App.css'
+import Topbar from './components/Topbar';
+import Error from './components/Error';
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element : <Topbar />,
+    errorElement: <Error />
+  },
+  {
+    path: "/hire",
+    element : <Hire />,
+    errorElement: <Error />
+  }
+])
 function App() {
   return (
-      <>
-      <Routes>
-        <Route exact path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route exact path=':about' element={<About />} />
-          <Route exact path='skills' element={<Skills />} />
-          <Route exact path='contact' element={<Contact />} />
-        </Route>
-      </Routes>
-      </>
+    <>
+      <React.StrictMode>
+      <div className='app-container'>
+        <RouterProvider router={router} />
+      </div>
+      </React.StrictMode>
+    </>
   )
 }
 
-export default App
+export default App;
